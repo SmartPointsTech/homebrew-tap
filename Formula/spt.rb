@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.1.0/spt_0.1.0_darwin_amd64.tar.gz"
-      sha256 "70a865cc3728a51c441ac79750d86151e8d8b8a052cc417971047eecd3a68f97"
+      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.2.0/spt_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ce654862c56177f605324c594bccc697a919df948d92a7bc774df7cf1fade44c"
 
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.1.0/spt_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5514090a653c904f0b9e3cf2d762e6abdb5d63305d6cf3ce84d27a5d2e2ae692"
+      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.2.0/spt_0.2.0_darwin_arm64.tar.gz"
+      sha256 "bbf0813bafb4e523ce20cb893b864d2566704e920d30e9017fdb6c000bab3f05"
 
       def install
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.1.0/spt_0.1.0_linux_amd64.tar.gz"
-      sha256 "7ec243705fc3ed222ce1ca956041e21bb92674c45096f0a599577bec7257ef12"
+      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.2.0/spt_0.2.0_linux_amd64.tar.gz"
+      sha256 "efd1919b718a49b64f0c9fbb3138f13512710690bd116ff90bf856b374646144"
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.1.0/spt_0.1.0_linux_arm64.tar.gz"
-      sha256 "ac36664aac97b34ad07084ece8884d8d38fdefe9b15104efceef115dfbbc408c"
+      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.2.0/spt_0.2.0_linux_arm64.tar.gz"
+      sha256 "b6557c7eacbf89349a83fb240029ab714362436e154a27c9b1fd11eb78cc5b4e"
       def install
         bin.install "spt"
       end
