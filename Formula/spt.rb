@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.3.0/spt_0.3.0_darwin_amd64.tar.gz"
-      sha256 "76f5db4282dc37172c54e377d188c34ae730f6c1b6c56406639d937a19a1161a"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.4.0/spt_0.4.0_darwin_amd64.tar.gz"
+      sha256 "df8ec769d4f7d65c2cd9c5612483bb0e493d3f19525506ba845067dce3a9681c"
 
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.3.0/spt_0.3.0_darwin_arm64.tar.gz"
-      sha256 "7761ddb9b44efd2c99dd575f0a8c31d5e9858a16aaccc55056477fa90ea5456f"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.4.0/spt_0.4.0_darwin_arm64.tar.gz"
+      sha256 "40d5f761341d43517ee60257f8221e741dd02f57bae1a8c30f87d94f97c15840"
 
       def install
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.3.0/spt_0.3.0_linux_amd64.tar.gz"
-      sha256 "d8648cab0323dd03c27b4ca43d0a0d269cfc6130cca0b881e96a7d28e7fad40b"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.4.0/spt_0.4.0_linux_amd64.tar.gz"
+      sha256 "d6cc91cafc5efc42a34119467adbb0fedbb19c8ee2b80f6b5b48950a75090b92"
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SmartPointsTech/spt-flow/releases/download/v0.3.0/spt_0.3.0_linux_arm64.tar.gz"
-      sha256 "9b0acf81e5578036519a330c6ad57829c25cae5b434d4b8e5c899ff6c8a4fbee"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.4.0/spt_0.4.0_linux_arm64.tar.gz"
+      sha256 "2d980e9ad6357f0190fa0df6403dcccc096cdd58893ca53e7c87c027006d56a2"
       def install
         bin.install "spt"
       end
