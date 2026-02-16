@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.0/spt_0.5.0_darwin_amd64.tar.gz"
-      sha256 "3a544be2bf8191f539cd6b8d7457f07235b2d6098ad5d14ed2592a9cc9482b0b"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_darwin_amd64.tar.gz"
+      sha256 "e6b2b88e2e527ff89a3c9c2194c98a7051476edcf6e7f08052289207229c25b9"
 
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.0/spt_0.5.0_darwin_arm64.tar.gz"
-      sha256 "cf38c8f5cc35dfed14f2dd2eb8a50406aded65b18935410387bd8104dcf7e338"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_darwin_arm64.tar.gz"
+      sha256 "e3db8615eba7174da8359720d0e8462e90ee4ad590060aeede27bb0298f65026"
 
       def install
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.0/spt_0.5.0_linux_amd64.tar.gz"
-      sha256 "9e188ddcb1b6b63a2282fc1a96ac8163e0f9728d710316db11166ec830be68fd"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_linux_amd64.tar.gz"
+      sha256 "34cd432325a65e3e92fa5347edc172f3fbcbccf929d3e7b2098e4063803f93e6"
       def install
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.0/spt_0.5.0_linux_arm64.tar.gz"
-      sha256 "d273592a97c1ef75f1f350cdb411daf44b35e73f021e931b2d461201a32da239"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_linux_arm64.tar.gz"
+      sha256 "bec77eace35bb14c36192a24677697a8661d10c76433f42bdd3d1e263059e67d"
       def install
         bin.install "spt"
       end
