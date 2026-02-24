@@ -5,23 +5,23 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_darwin_amd64.tar.gz"
-      sha256 "e6b2b88e2e527ff89a3c9c2194c98a7051476edcf6e7f08052289207229c25b9"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.6.0/spt_0.6.0_darwin_amd64.tar.gz"
+      sha256 "e9d76d25aceeedc1c4f446176f922032061f1ef8e0cc5db79d9abde015497574"
 
-      def install
+      define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_darwin_arm64.tar.gz"
-      sha256 "e3db8615eba7174da8359720d0e8462e90ee4ad590060aeede27bb0298f65026"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.6.0/spt_0.6.0_darwin_arm64.tar.gz"
+      sha256 "71717304bf774b52554d9061859cf979e23b89097b431a1788f4679e981c9c48"
 
-      def install
+      define_method(:install) do
         bin.install "spt"
       end
     end
@@ -29,16 +29,16 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_linux_amd64.tar.gz"
-      sha256 "34cd432325a65e3e92fa5347edc172f3fbcbccf929d3e7b2098e4063803f93e6"
-      def install
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.6.0/spt_0.6.0_linux_amd64.tar.gz"
+      sha256 "6eaf93310749c672c5118c8ae9b1b5ed001c4fac0bc33af4f7bd23d23939dfa7"
+      define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.5.1/spt_0.5.1_linux_arm64.tar.gz"
-      sha256 "bec77eace35bb14c36192a24677697a8661d10c76433f42bdd3d1e263059e67d"
-      def install
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.6.0/spt_0.6.0_linux_arm64.tar.gz"
+      sha256 "4393885b10f5a878e7b37a22f7910e41da0df613dee8875967c6c00acae6835e"
+      define_method(:install) do
         bin.install "spt"
       end
     end
