@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.8.0/spt_0.8.0_darwin_amd64.tar.gz"
-      sha256 "5ea11f20eda1a79573c46023355d2594042e9b6b596f835496187fa509039205"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_amd64.tar.gz"
+      sha256 "d798bd991704f5145ed10ed6a6d6814367f1947fea4fc94b92b4d125a1cbe4f5"
 
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.8.0/spt_0.8.0_darwin_arm64.tar.gz"
-      sha256 "f86899b06afc426f4ae7a6d641e831e82727c4f4c0eb66671cc044b1223a0663"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_arm64.tar.gz"
+      sha256 "ebdcc3dcdbc04260b6ebf8c5d1fda0a403c2711372a1a1bc08e410e2f9ba5975"
 
       define_method(:install) do
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.8.0/spt_0.8.0_linux_amd64.tar.gz"
-      sha256 "1be667d278739b35c39847298f9944a080b1becbbc676fac68a98c44d6864f1a"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_amd64.tar.gz"
+      sha256 "11fb2f622f7e8efb7141438deabeef63dacb41aafa32b06c9408ebf3848c9d1b"
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.8.0/spt_0.8.0_linux_arm64.tar.gz"
-      sha256 "c6b8d482734194c29c5d08e05bf8222878cfaafe6217148b2c568271652abc2e"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_arm64.tar.gz"
+      sha256 "c2251f583c509143b96b77b65258ccd7f42d37e1aaa5902f94e008e22b00402e"
       define_method(:install) do
         bin.install "spt"
       end
