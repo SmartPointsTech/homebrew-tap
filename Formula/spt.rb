@@ -11,7 +11,7 @@ class Spt < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_amd64.tar.gz"
-      sha256 "d798bd991704f5145ed10ed6a6d6814367f1947fea4fc94b92b4d125a1cbe4f5"
+      sha256 "b4bfd4536ff39226d425f9b4c4a172c0b29eba40de4e3ff74183b85e78f7ac3f"
 
       define_method(:install) do
         bin.install "spt"
@@ -19,7 +19,7 @@ class Spt < Formula
     end
     if Hardware::CPU.arm?
       url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_arm64.tar.gz"
-      sha256 "ebdcc3dcdbc04260b6ebf8c5d1fda0a403c2711372a1a1bc08e410e2f9ba5975"
+      sha256 "49e81790b8dfab9dd69a30538395dbbb3b61aaee1059ccec27afeeff5c2eca1b"
 
       define_method(:install) do
         bin.install "spt"
@@ -30,14 +30,14 @@ class Spt < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_amd64.tar.gz"
-      sha256 "11fb2f622f7e8efb7141438deabeef63dacb41aafa32b06c9408ebf3848c9d1b"
+      sha256 "9f6cdfc3e98ce595ffea27d765893510e52b5007a32b01491586005962af6479"
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_arm64.tar.gz"
-      sha256 "c2251f583c509143b96b77b65258ccd7f42d37e1aaa5902f94e008e22b00402e"
+      sha256 "cc451d3411bde8323cfc7f3c24c0d721db6a5b2f59e63a74d89578e07020e381"
       define_method(:install) do
         bin.install "spt"
       end
