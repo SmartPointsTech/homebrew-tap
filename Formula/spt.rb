@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.10.0"
+  version "0.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_darwin_amd64.tar.gz"
-      sha256 "6ba1e798ad01bf19fe215728da1ee1c8e93221b3e59653ac91948478b35765da"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.1/spt_0.10.1_darwin_amd64.tar.gz"
+      sha256 "4133e41336353ee619a80d54da4be8334bfcd0e3d16241c7e35fcf2ea6479803"
 
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_darwin_arm64.tar.gz"
-      sha256 "4192af4b3ec92d61cac41d66a92492c7fb55ff3872596e6c8fd73011ce0bf056"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.1/spt_0.10.1_darwin_arm64.tar.gz"
+      sha256 "e0b2c2604f1dc8d0a5f94525f881d644031ea4f58c66126a922a19d6be80d60f"
 
       define_method(:install) do
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_linux_amd64.tar.gz"
-      sha256 "50ab20797dd5a23c9081c2a60e35ec63902bcdf914eb10f8d1aceaa072e9ca2f"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.1/spt_0.10.1_linux_amd64.tar.gz"
+      sha256 "c54519c8dcf60208d577d52a46135b3a609758b0fae4af0bd8330dbf213bb874"
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_linux_arm64.tar.gz"
-      sha256 "fe2b2f1bef2cebf9427e780d06eece99807a4eb1fa2601a449bf018de7392230"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.1/spt_0.10.1_linux_arm64.tar.gz"
+      sha256 "5e1f4e44baa50f819c24f5c376fb7c5c105e481d3effb2413b9c7062c14f9780"
       define_method(:install) do
         bin.install "spt"
       end
