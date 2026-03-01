@@ -5,21 +5,21 @@
 class Spt < Formula
   desc "CLI for managing Coder workspaces on Azure"
   homepage "https://github.com/SmartPointsTech/spt-flow"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_amd64.tar.gz"
-      sha256 "d955e78f243a4df3d781bae9a23b5fd90dbf4efa2faf5eaf1afac28dcd62f77c"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_darwin_amd64.tar.gz"
+      sha256 "6ba1e798ad01bf19fe215728da1ee1c8e93221b3e59653ac91948478b35765da"
 
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_darwin_arm64.tar.gz"
-      sha256 "f2d2d8093184150cb9991f1c3498288905bc54ae7bb553d77076f691ae0f6acb"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_darwin_arm64.tar.gz"
+      sha256 "4192af4b3ec92d61cac41d66a92492c7fb55ff3872596e6c8fd73011ce0bf056"
 
       define_method(:install) do
         bin.install "spt"
@@ -29,15 +29,15 @@ class Spt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_amd64.tar.gz"
-      sha256 "19d4f6a46b8485f68bf317a6355503bef011a14abc7462afe1c0987cd8ad9b78"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_linux_amd64.tar.gz"
+      sha256 "50ab20797dd5a23c9081c2a60e35ec63902bcdf914eb10f8d1aceaa072e9ca2f"
       define_method(:install) do
         bin.install "spt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sptflowreleases.blob.core.windows.net/cli/v0.9.0/spt_0.9.0_linux_arm64.tar.gz"
-      sha256 "60c17bbaf4f89448810e57780b822217562300df3ebe2659418e6c886bdc744d"
+      url "https://sptflowreleases.blob.core.windows.net/cli/v0.10.0/spt_0.10.0_linux_arm64.tar.gz"
+      sha256 "fe2b2f1bef2cebf9427e780d06eece99807a4eb1fa2601a449bf018de7392230"
       define_method(:install) do
         bin.install "spt"
       end
